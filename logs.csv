@@ -1,0 +1,4 @@
+﻿level,event_time,message
+INFO,2025-04-23T10:00:00Z,Startup complete
+ERROR,2025-04-23T10:05:00Z,NullPointerException
+WARN,2025-04-23T10:10:00Z,Disk space low

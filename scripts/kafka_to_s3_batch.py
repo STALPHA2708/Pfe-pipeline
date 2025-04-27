@@ -5,8 +5,8 @@ import json
 # S3 client setup
 s3 = boto3.client(
     "s3",
-    endpoint_url="http://localhost:4566",
-    aws_access_key_id="user",
+    endpoint_url="http://minio:9000",
+    aws_access_key_id="admin",
     aws_secret_access_key="password",
     region_name="us-east-1"
 )

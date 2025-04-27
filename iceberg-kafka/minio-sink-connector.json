@@ -1,0 +1,19 @@
+{
+  "name": "minio-sink-connector",
+  "config": {
+    "connector.class": "io.confluent.connect.s3.S3SinkConnector",
+    "tasks.max": "1",
+    "topics": "ppe-injury-cleaned",
+    "s3.bucket.name": "warehouse",
+    "s3.region": "us-east-1",
+    "s3.endpoint": "http://minio:9000",
+    "store.url": "http://minio:9000",
+    "flush.size": "1",
+    "storage.class": "io.confluent.connect.s3.storage.S3Storage",
+    "format.class": "io.confluent.connect.s3.format.json.JsonFormat",
+    "schema.compatibility": "NONE",
+    "s3.path.style.access": "true",
+    "aws.access.key.id": "admin",
+    "aws.secret.access.key": "password"
+  }
+}
